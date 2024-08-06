@@ -1,0 +1,8 @@
+{
+    "name": "Vietnamese Extension",
+    "description": "Vietnamese Extension",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/xemphimhay/gggplugin/builds/plugins.json"
+    ]
+}

@@ -1,0 +1,86 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=ophim17.cc&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/xemphimhay/gggplugin",
+        "fileSize": 22733,
+        "status": 1,
+        "language": "vi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "Anime",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 7,
+        "internalName": "KKphimProvider",
+        "url": "https://raw.githubusercontent.com/xemphimhay/gggplugin/builds/KKphimProvider.cs3",
+        "name": "KKphimProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=ophim17.cc&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/xemphimhay/gggplugin",
+        "fileSize": 22737,
+        "status": 1,
+        "language": "vi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "Anime",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 7,
+        "internalName": "NguoncProvider",
+        "url": "https://raw.githubusercontent.com/xemphimhay/gggplugin/builds/NguoncProvider.cs3",
+        "name": "NguoncProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=ophim17.cc&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/xemphimhay/gggplugin",
+        "fileSize": 22914,
+        "status": 1,
+        "language": "vi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "Anime",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 7,
+        "internalName": "OphimProvider",
+        "url": "https://raw.githubusercontent.com/xemphimhay/gggplugin/builds/OphimProvider.cs3",
+        "name": "OphimProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=phimmoichillk.net&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/xemphimhay/gggplugin",
+        "fileSize": 15175,
+        "status": 1,
+        "language": "vi",
+        "authors": [
+            "Hexated"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "Anime",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 7,
+        "internalName": "PhimmoichillProvider",
+        "url": "https://raw.githubusercontent.com/xemphimhay/gggplugin/builds/PhimmoichillProvider.cs3",
+        "name": "PhimmoichillProvider"
+    }
+]
