@@ -34,7 +34,7 @@ fun MainAPI.fixUrl(url: String,domain : String): String {
 
 open class OphimProvider : MainAPI() {
     override var name = API_NAME
-    override var mainUrl = "https://phimapi.com"
+    override var mainUrl = "https://phim.nguonc.com/api"
     override var lang = "vi"
     override val hasMainPage = true
     override val hasChromecastSupport = true
@@ -48,12 +48,12 @@ open class OphimProvider : MainAPI() {
     )
 
     companion object {
-        const val DOMAIN = "https://phimapi.com"
+        const val DOMAIN = "https://phim.nguonc.com/api"
         const val DOMAIN_IMAGE = "https://phimimg.com/uploads/movies"
         const val API_NAME = "KKphim"
-        const val PREFIX_GENRE = "/v1/api/the-loai"
-        const val PREFIX_COUNTRY = "/v1/api/quoc-gia"
-        const val DOMAIN_DETAIL_MOVIE = "$DOMAIN/v1/api/phim"
+        const val PREFIX_GENRE = "/films/the-loai"
+        const val PREFIX_COUNTRY = "/films/quoc-gia"
+        const val DOMAIN_DETAIL_MOVIE = "$DOMAIN/film"
     }
 
     override suspend fun search(query: String): List<SearchResponse>? {
@@ -61,7 +61,7 @@ open class OphimProvider : MainAPI() {
     }
 
     override suspend fun quickSearch(query: String): List<SearchResponse>? {
-        val response = app.get("$DOMAIN/v1/api/tim-kiem?keyword=$query").parsedSafe<Home>()
+        val response = app.get("$DOMAIN/films/search?keyword=$query").parsedSafe<Home>()
 
         return response?.data?.items?.mapNotNull { itemData ->
             val phim18 = itemData.category.find { cate -> cate.slug == "phim-18" }
@@ -78,7 +78,7 @@ open class OphimProvider : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
-        "${mainUrl}/v1/api/home" to "Phim Mới",
+        "${mainUrl}/films/danh-sach/phim-dang-chieu" to "Phim Đang chiếu",
         "${mainUrl}/v1/api/danh-sach/phim-le" to "Phim Lẻ",
         "${mainUrl}/v1/api/danh-sach/phim-bo" to "Phim Bộ",
         "${mainUrl}/v1/api/danh-sach/hoat-hinh" to "Hoạt hình",
