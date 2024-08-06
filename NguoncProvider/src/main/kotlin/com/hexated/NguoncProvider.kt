@@ -254,15 +254,15 @@ open class OphimProvider : MainAPI() {
     )
 
     data class ItemData(
-        @JsonProperty("_id") val _id: String,
+        // @JsonProperty("_id") val _id: String,
         @JsonProperty("name") val name: String,
         @JsonProperty("slug") val slug: String,
-        @JsonProperty("origin_name") val origin_name: String,
-        @JsonProperty("type") val type: String,
+        @JsonProperty("original_name") val origin_name: String,
+        // @JsonProperty("type") val type: String,
         @JsonProperty("thumb_url") val thumb_url: String,
-        @JsonProperty("sub_docquyen") val sub_docquyen: Boolean,
+        // @JsonProperty("sub_docquyen") val sub_docquyen: Boolean,
         @JsonProperty("time") val time: String,
-        @JsonProperty("episode_current") val episode_current: String,
+        @JsonProperty("current_episode") val episode_current: String,
         @JsonProperty("quality") val quality: String,
         @JsonProperty("lang") val lang: String,
         @JsonProperty("year") val year: String,
@@ -279,8 +279,8 @@ open class OphimProvider : MainAPI() {
     //
     data class ResponseMetaData(
         @JsonProperty("status") val status: String,
-        @JsonProperty("message") val message: String,
-        @JsonProperty("data") val data: ListItems,
+        // @JsonProperty("message") val message: String,
+        @JsonProperty("items") val data: ListItems,
     )
 
     data class ListItems(
@@ -292,8 +292,8 @@ open class OphimProvider : MainAPI() {
 
     data class ResponseData(
         @JsonProperty("status") val status: String,
-        @JsonProperty("message") val message: String,
-        @JsonProperty("data") val data: MovieDetailData,
+        // @JsonProperty("message") val message: String,
+        @JsonProperty("items") val data: MovieDetailData,
     )
 
     data class MovieDetailData(
