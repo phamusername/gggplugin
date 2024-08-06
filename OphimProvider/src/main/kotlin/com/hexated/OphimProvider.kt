@@ -8,6 +8,28 @@ import org.jsoup.nodes.Element
 import java.net.URI
 import java.net.URLDecoder
 
+fun MainAPI.fixUrl(url: String,domain : String): String {
+    if (url.startsWith("http") ||
+        // Do not fix JSON objects when passed as urls.
+        url.startsWith("{\"")
+    ) {
+        return url
+    }
+    if (url.isEmpty()) {
+        return ""
+    }
+
+    val startsWithNoHttp = url.startsWith("//")
+    if (startsWithNoHttp) {
+        return "https:$url"
+    } else {
+        if (url.startsWith('/')) {
+            return domain + url
+        }
+        return "$domain/$url"
+    }
+}
+
 open class OphimProvider : MainAPI() {
     override var name = API_NAME
     override var mainUrl = "https://ophim1.com"
