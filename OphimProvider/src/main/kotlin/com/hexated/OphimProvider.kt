@@ -8,6 +8,8 @@ import org.jsoup.nodes.Element
 import java.net.URI
 import java.net.URLDecoder
 
+import com.fasterxml.jackson.annotation.JsonProperty
+
 fun MainAPI.fixUrl(url: String,domain : String): String {
     if (url.startsWith("http") ||
         // Do not fix JSON objects when passed as urls.
